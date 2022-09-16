@@ -172,7 +172,7 @@ class hotBlogList extends StatelessWidget {
       height: size.height / 3.5,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: itBlogList.length,
+        itemCount: itBlogList.getRange(0, 5).length,
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.only(right: index == 0 ? SpaceMargin : 15),

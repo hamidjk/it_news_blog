@@ -23,8 +23,8 @@ class ItBlogModels {
       required this.views});
 }
 
-class podcasts {
+class Podcasts {
   var image;
   var title;
-  podcasts({required this.image, required this.title});
+  Podcasts({required this.image, required this.title});
 }

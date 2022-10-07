@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class colorss {
+class Colorss {
   static const titles = Color.fromARGB(255, 40, 107, 184);
   static const postertitle = Color.fromARGB(255, 255, 255, 255);
   static const texttitle = Color.fromARGB(255, 0, 0, 0);
@@ -13,9 +13,12 @@ class colorss {
   static const submitPodcasts = Color.fromARGB(255, 249, 249, 249);
   static const selectpodcast = Color.fromARGB(255, 255, 139, 26);
   static const hashtagtext = Color.fromARGB(255, 248, 247, 245);
+  static const button = Color.fromARGB(192, 72, 20, 88);
+  static const emailhint = Color.fromARGB(255, 219, 219, 219);
+  static const lightwhite = Color.fromARGB(255, 230, 230, 230);
 }
 
-class gradientcolors {
+class Gradientcolors {
   static const List<Color> hashtags = [
     const Color.fromARGB(255, 0, 0, 0),
     const Color.fromARGB(255, 60, 60, 60),

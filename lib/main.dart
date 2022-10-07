@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:it_news_blog_hamidjk/mycolors.dart';
-import 'package:it_news_blog_hamidjk/viewpages/splash_screen.dart';
-
+import 'package:it_news_blog_hamidjk/my_colors.dart';
+import 'package:it_news_blog_hamidjk/viewpages/category.dart';
+import 'package:it_news_blog_hamidjk/viewpages/main_screen.dart';
+import 'package:it_news_blog_hamidjk/viewpages/profile_screen.dart';
+import 'package:it_news_blog_hamidjk/viewpages/register1.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -17,6 +19,7 @@ void main() {
 class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var textThemeins = Theme.of(context).textTheme;
     return MaterialApp(
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -27,29 +30,83 @@ class myApp extends StatelessWidget {
           Locale('fa', '')
         ],
         theme: ThemeData(
+            inputDecorationTheme: InputDecorationTheme(
+              border: OutlineInputBorder(
+                  borderSide: BorderSide(width: 5),
+                  borderRadius: BorderRadius.circular(18)),
+            ),
+            elevatedButtonTheme: ElevatedButtonThemeData(
+                style: ButtonStyle(
+              textStyle: MaterialStateProperty.resolveWith(
+                (states) {
+                  if (states.contains(MaterialState.pressed)) {
+                    return textThemeins.headline2;
+                  }
+                  return textThemeins.button;
+                },
+              ),
+              backgroundColor: MaterialStateProperty.resolveWith(
+                (states) {
+                  if (states.contains(MaterialState.pressed)) {
+                    return Colorss.texttitle;
+                  }
+                  return Colorss.button;
+                },
+              ),
+            )),
             fontFamily: 'jkbold',
             textTheme: TextTheme(
                 headline1: TextStyle(
                     fontFamily: 'jkbold',
                     fontSize: 14,
-                    color: colorss.postertitle,
+                    color: Colorss.postertitle,
                     fontWeight: FontWeight.w700),
                 subtitle1: TextStyle(
                     fontFamily: 'jkbold',
-                    fontSize: 20,
-                    color: colorss.postertitle,
+                    fontSize: 21,
+                    color: Colorss.postertitle,
                     fontWeight: FontWeight.bold),
                 subtitle2: TextStyle(
                     fontFamily: 'jkbold',
+                    fontSize: 20,
+                    color: Colorss.texttitle,
+                    fontWeight: FontWeight.bold),
+                headline3: TextStyle(
+                    fontFamily: 'jkbold',
                     fontSize: 17,
-                    color: colorss.texttitle,
+                    color: Colorss.texttitle,
+                    fontWeight: FontWeight.bold),
+                headline4: TextStyle(
+                    fontFamily: 'jkbold',
+                    fontSize: 14,
+                    color: Colorss.emailhint,
+                    fontWeight: FontWeight.bold),
+                headline5: TextStyle(
+                    fontFamily: 'jkbold',
+                    fontSize: 15,
+                    color: Colorss.texttitle,
                     fontWeight: FontWeight.bold),
                 bodyText1: TextStyle(
                     fontFamily: 'jkbold',
                     fontSize: 15,
-                    color: colorss.titles,
+                    color: Colorss.titles,
+                    fontWeight: FontWeight.bold),
+                button: TextStyle(
+                    fontFamily: 'jkbold',
+                    fontSize: 30,
+                    color: Colorss.postertitle,
+                    fontWeight: FontWeight.bold),
+                bodyText2: TextStyle(
+                    fontFamily: 'jkbold',
+                    fontSize: 15,
+                    color: Colorss.button,
+                    fontWeight: FontWeight.bold),
+                headline2: TextStyle(
+                    fontFamily: 'jkbold',
+                    fontSize: 60,
+                    color: Colorss.postertitle,
                     fontWeight: FontWeight.bold))),
         debugShowCheckedModeBanner: false,
-        home: splashscreen());
+        home: mainscreen());
   }
 }

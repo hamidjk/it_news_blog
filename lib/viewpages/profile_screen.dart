@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
 import 'package:it_news_blog_hamidjk/models/postermap.dart';
-import 'package:it_news_blog_hamidjk/mycolors.dart';
-import 'package:it_news_blog_hamidjk/mycomponents.dart';
+import 'package:it_news_blog_hamidjk/my_colors.dart';
+import 'package:it_news_blog_hamidjk/my_components.dart';
 import 'package:it_news_blog_hamidjk/strings.dart';
-
 
 class profilescreen extends StatelessWidget {
   const profilescreen({
@@ -39,10 +38,10 @@ class profilescreen extends StatelessWidget {
               children: [
                 ImageIcon(
                   AssetImage(Assets.icons.medad.path),
-                  color: colorss.titles,
+                  color: Colorss.titles,
                 ),
                 Text(
-                  myStrings.profilepicedit,
+                  MyStrings.profilepicedit,
                   style: textThemeins.bodyText1,
                 )
               ],
@@ -67,9 +66,9 @@ class profilescreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {},
-              splashColor: colorss.selectpodcast,
+              splashColor: Colorss.selectpodcast,
               child: Text(
-                myStrings.maghalefav,
+                MyStrings.maghalefav,
                 style: textThemeins.subtitle2,
               ),
             ),
@@ -82,9 +81,9 @@ class profilescreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {},
-              splashColor: colorss.selectpodcast,
+              splashColor: Colorss.selectpodcast,
               child: Text(
-                myStrings.padcastsfav,
+                MyStrings.padcastsfav,
                 style: textThemeins.subtitle2,
               ),
             ),
@@ -97,9 +96,9 @@ class profilescreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {},
-              splashColor: colorss.selectpodcast,
+              splashColor: Colorss.selectpodcast,
               child: Text(
-                myStrings.signoutuser,
+                MyStrings.signoutuser,
                 style: textThemeins.subtitle2,
               ),
             ),
@@ -107,7 +106,9 @@ class profilescreen extends StatelessWidget {
               height: 10,
             ),
             dividerProfile(size: size),
-            const SizedBox(height: 77,)
+            const SizedBox(
+              height: 77,
+            )
           ],
         ));
   }
@@ -131,10 +132,10 @@ class seeMoreHotPodcastsList extends StatelessWidget {
         children: [
           ImageIcon(
             AssetImage(Assets.icons.micro.path),
-            color: colorss.titles,
+            color: Colorss.titles,
           ),
           Text(
-            myStrings.viewHotpad,
+            MyStrings.viewHotpad,
             style: textThemeins.bodyText1,
           )
         ],
@@ -161,9 +162,9 @@ class seeMoreHotBlogList extends StatelessWidget {
         children: [
           ImageIcon(
             AssetImage(Assets.icons.medad.path),
-            color: colorss.titles,
+            color: Colorss.titles,
           ),
-          Text(myStrings.viewHotBlog, style: textThemeins.bodyText1),
+          Text(MyStrings.viewHotBlog, style: textThemeins.bodyText1),
         ],
       ),
     );
@@ -250,7 +251,7 @@ class hotBlogList extends StatelessWidget {
                         foregroundDecoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(16)),
                             gradient: LinearGradient(
-                                colors: gradientcolors.blog,
+                                colors: Gradientcolors.blog,
                                 begin: Alignment.bottomCenter,
                                 end: Alignment.topCenter)),
                       ),
@@ -330,7 +331,7 @@ class hashtagList extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(18)),
                     gradient: LinearGradient(
-                        colors: gradientcolors.hashtags,
+                        colors: Gradientcolors.hashtags,
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft)),
                 child: Padding(
@@ -384,7 +385,7 @@ class stackPoster extends StatelessWidget {
           foregroundDecoration: BoxDecoration(
               borderRadius: BorderRadius.circular(17),
               gradient: LinearGradient(
-                  colors: gradientcolors.homepostergradient,
+                  colors: Gradientcolors.homepostergradient,
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter)),
         ),

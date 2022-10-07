@@ -1,5 +1,5 @@
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'hashtag_data.dart';
+import 'data.dart';
 
 Map posterMap = {
   "imageposterasset": Assets.images.poster.path,
@@ -14,7 +14,9 @@ List<HashTagModel> tagsList = [
   HashTagModel(title: "جاوا اسکریپت"),
   HashTagModel(title: "سی"),
   HashTagModel(title: "بش اسکریپت"),
+  HashTagModel(title: "نود جی اس"),
 ];
+List<HashTagModel> tagListreciver = [];
 List<ItBlogModels> itBlogList = [
   ItBlogModels(
       id: 1,
@@ -243,10 +245,10 @@ List<ItBlogModels> itBlogList = [
       """,
       views: "25996")
 ];
-List<podcasts> podcastsList = [
-  podcasts(image: Assets.images.p1.path, title: "Hacker"),
-  podcasts(image: Assets.images.p2.path, title: "Ai"),
-  podcasts(image: Assets.images.p3.path, title: "Ai vs Human"),
-  podcasts(image: Assets.images.p4.path, title: "Programming"),
-  podcasts(image: Assets.images.p5.path, title: "Cyber Security"),
+List<Podcasts> podcastsList = [
+  Podcasts(image: Assets.images.p1.path, title: "Hacker"),
+  Podcasts(image: Assets.images.p2.path, title: "Ai"),
+  Podcasts(image: Assets.images.p3.path, title: "Ai vs Human"),
+  Podcasts(image: Assets.images.p4.path, title: "Programming"),
+  Podcasts(image: Assets.images.p5.path, title: "Cyber Security"),
 ];

@@ -15,6 +15,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/icons/Hashtag.png');
 
+  /// File path: assets/icons/arrOw.png
+  AssetGenImage get arrOw => const AssetGenImage('assets/icons/arrOw.png');
+
   /// File path: assets/icons/biguser.png
   AssetGenImage get biguser => const AssetGenImage('assets/icons/biguser.png');
 
@@ -32,6 +35,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/user.png
   AssetGenImage get user => const AssetGenImage('assets/icons/user.png');
+
+  /// File path: assets/icons/w.svg
+  String get w => 'assets/icons/w.svg';
 }
 
 class $AssetsImagesGen {
@@ -42,9 +48,6 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/biguser.png
   AssetGenImage get biguser => const AssetGenImage('assets/images/biguser.png');
-
-  /// File path: assets/images/it.png
-  AssetGenImage get it => const AssetGenImage('assets/images/it.png');
 
   /// File path: assets/images/itslogo.png
   AssetGenImage get itslogo => const AssetGenImage('assets/images/itslogo.png');

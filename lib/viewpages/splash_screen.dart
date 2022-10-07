@@ -3,12 +3,12 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
 import 'package:it_news_blog_hamidjk/viewpages/main_screen.dart';
 
-class splashscreen extends StatefulWidget {
+class Splashscreen extends StatefulWidget {
   @override
-  State<splashscreen> createState() => _splashscreenState();
+  State<Splashscreen> createState() => _SplashscreenState();
 }
 
-class _splashscreenState extends State<splashscreen> {
+class _SplashscreenState extends State<Splashscreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 5)).then((value) {

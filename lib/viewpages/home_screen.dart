@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
 import 'package:it_news_blog_hamidjk/models/postermap.dart';
-import 'package:it_news_blog_hamidjk/mycolors.dart';
+import 'package:it_news_blog_hamidjk/my_colors.dart';
 import 'package:it_news_blog_hamidjk/strings.dart';
+
+import '../my_components.dart';
 
 class HomeScreenextract extends StatelessWidget {
   const HomeScreenextract({
@@ -73,10 +75,10 @@ class seeMoreHotPodcastsList extends StatelessWidget {
         children: [
           ImageIcon(
             AssetImage(Assets.icons.micro.path),
-            color: colorss.titles,
+            color: Colorss.titles,
           ),
           Text(
-            myStrings.viewHotpad,
+            MyStrings.viewHotpad,
             style: textThemeins.bodyText1,
           )
         ],
@@ -103,9 +105,9 @@ class seeMoreHotBlogList extends StatelessWidget {
         children: [
           ImageIcon(
             AssetImage(Assets.icons.medad.path),
-            color: colorss.titles,
+            color: Colorss.titles,
           ),
-          Text(myStrings.viewHotBlog, style: textThemeins.bodyText1),
+          Text(MyStrings.viewHotBlog, style: textThemeins.bodyText1),
         ],
       ),
     );
@@ -192,7 +194,7 @@ class hotBlogList extends StatelessWidget {
                         foregroundDecoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(16)),
                             gradient: LinearGradient(
-                                colors: gradientcolors.blog,
+                                colors: Gradientcolors.blog,
                                 begin: Alignment.bottomCenter,
                                 end: Alignment.topCenter)),
                       ),
@@ -267,33 +269,10 @@ class hashtagList extends StatelessWidget {
           return Padding(
             padding:
                 EdgeInsets.fromLTRB(0, 12, index == 0 ? SpaceMargin : 14, 8),
-            child: Container(
-                height: 60,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(18)),
-                    gradient: LinearGradient(
-                        colors: gradientcolors.hashtags,
-                        begin: Alignment.centerRight,
-                        end: Alignment.centerLeft)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      ImageIcon(
-                        AssetImage(Assets.icons.hashtag.path),
-                        color: Colors.white,
-                        size: 15,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        tagsList[index].title,
-                        style: textThemeins.headline1,
-                      )
-                    ],
-                  ),
-                )),
+            child: HashTagsListComponent(
+              textThemeins: textThemeins,
+              index: index,
+            ),
           );
         },
       ),
@@ -326,7 +305,7 @@ class stackPoster extends StatelessWidget {
           foregroundDecoration: BoxDecoration(
               borderRadius: BorderRadius.circular(17),
               gradient: LinearGradient(
-                  colors: gradientcolors.homepostergradient,
+                  colors: Gradientcolors.homepostergradient,
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter)),
         ),

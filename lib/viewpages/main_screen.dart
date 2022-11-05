@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
 import 'package:it_news_blog_hamidjk/my_colors.dart';
-import 'package:it_news_blog_hamidjk/my_components.dart';
 import 'package:it_news_blog_hamidjk/viewpages/home_screen.dart';
 import 'package:it_news_blog_hamidjk/viewpages/profile_screen.dart';
 

@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:it_news_blog_hamidjk/my_colors.dart';
-import 'package:it_news_blog_hamidjk/viewpages/category.dart';
+
 import 'package:it_news_blog_hamidjk/viewpages/main_screen.dart';
-import 'package:it_news_blog_hamidjk/viewpages/profile_screen.dart';
-import 'package:it_news_blog_hamidjk/viewpages/register1.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

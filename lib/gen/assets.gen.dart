@@ -5,7 +5,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
+// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal
 
 import 'package:flutter/widgets.dart';
 
@@ -38,6 +38,10 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/w.svg
   String get w => 'assets/icons/w.svg';
+
+  /// List of all assets
+  List<dynamic> get values =>
+      [hashtag, arrOw, biguser, home, medad, micro, par, user, w];
 }
 
 class $AssetsImagesGen {
@@ -76,6 +80,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/splashit.png
   AssetGenImage get splashit =>
       const AssetGenImage('assets/images/splashit.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [hashtag, biguser, itslogo, logo, p1, p2, p3, p4, p5, poster, splashit];
 }
 
 class Assets {
@@ -142,6 +150,8 @@ class AssetGenImage {
       cacheHeight: cacheHeight,
     );
   }
+
+  ImageProvider provider() => AssetImage(_assetName);
 
   String get path => _assetName;
 

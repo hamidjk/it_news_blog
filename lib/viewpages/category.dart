@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
 import 'package:it_news_blog_hamidjk/models/postermap.dart';
-import 'package:it_news_blog_hamidjk/my_components.dart';
-import 'package:it_news_blog_hamidjk/strings.dart';
 
-import '../my_colors.dart';
+import '../component/my_colors.dart';
+import '../component/my_components.dart';
+import '../component/strings.dart';
 
 class Categorypage extends StatefulWidget {
   @override

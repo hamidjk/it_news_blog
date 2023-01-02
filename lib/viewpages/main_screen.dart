@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'package:it_news_blog_hamidjk/my_colors.dart';
 import 'package:it_news_blog_hamidjk/viewpages/home_screen.dart';
 import 'package:it_news_blog_hamidjk/viewpages/profile_screen.dart';
+
+import '../component/my_colors.dart';
 
 class mainscreen extends StatefulWidget {
   @override
@@ -34,10 +35,6 @@ class _mainscreenState extends State<mainscreen> {
                       scale: 5,
                     ),
                   )),
-                  Divider(
-                    color: Colorss.dividercolor,
-                    thickness: 0.8,
-                  ),
                   ListTile(
                     title: Text(
                       "پروفایل کاربر",

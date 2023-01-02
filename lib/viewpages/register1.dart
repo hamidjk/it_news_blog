@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'package:it_news_blog_hamidjk/my_colors.dart';
-import 'package:it_news_blog_hamidjk/strings.dart';
 import 'package:it_news_blog_hamidjk/viewpages/category.dart';
 import 'package:validators/validators.dart';
+
+import '../component/my_colors.dart';
+import '../component/strings.dart';
 
 class Register1 extends StatelessWidget {
   @override

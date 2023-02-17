@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'package:it_news_blog_hamidjk/viewpages/category.dart';
+import 'package:it_news_blog_hamidjk/view/category.dart';
 import 'package:validators/validators.dart';
-
+import 'package:it_news_blog_hamidjk/component/strings.dart';
 import '../component/my_colors.dart';
-import '../component/strings.dart';
 
 class Register1 extends StatelessWidget {
   @override
@@ -27,7 +26,7 @@ class Register1 extends StatelessWidget {
         RichText(
             textAlign: TextAlign.center,
             text: TextSpan(
-                text: MyStrings.register1, style: textThemeins.subtitle2)),
+                text: MyStrings.register1, style: textThemeins.titleSmall)),
         Padding(
           padding: const EdgeInsets.only(top: 35),
           child: ElevatedButton(
@@ -63,7 +62,7 @@ class Register1 extends StatelessWidget {
               children: [
                 Text(
                   MyStrings.email,
-                  style: textThemeins.headline3,
+                  style: textThemeins.displaySmall,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
@@ -72,10 +71,10 @@ class Register1 extends StatelessWidget {
                     onChanged: (value) {
                       print(value + " is Email : " + isEmail(value).toString());
                     },
-                    style: textThemeins.subtitle2,
+                    style: textThemeins.titleSmall,
                     decoration: InputDecoration(
                         hintText: "itblog@gmail.com",
-                        hintStyle: textThemeins.headline4),
+                        hintStyle: textThemeins.headlineMedium),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -115,7 +114,7 @@ Future<dynamic> activeCodeBottomSheet(
             children: [
               Text(
                 MyStrings.activecode,
-                style: textThemeins.headline3,
+                style: textThemeins.displaySmall,
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -124,9 +123,10 @@ Future<dynamic> activeCodeBottomSheet(
                   onChanged: (value) {
                     print(value + " is Email : " + isEmail(value).toString());
                   },
-                  style: textThemeins.subtitle2,
+                  style: textThemeins.titleSmall,
                   decoration: InputDecoration(
-                      hintText: "*******", hintStyle: textThemeins.headline4),
+                      hintText: "*******",
+                      hintStyle: textThemeins.headlineMedium),
                   textAlign: TextAlign.center,
                 ),
               ),

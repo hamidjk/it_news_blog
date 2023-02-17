@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:it_news_blog_hamidjk/component/my_colors.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'package:it_news_blog_hamidjk/models/postermap.dart';
+import 'package:it_news_blog_hamidjk/model/postermap.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:developer' as logdev;
 
 class dividerProfile extends StatelessWidget {
   const dividerProfile({
@@ -56,10 +58,19 @@ class HashTagsListComponent extends StatelessWidget {
               ),
               Text(
                 tagsList[index].title,
-                style: textThemeins.headline1,
+                style: textThemeins.displayLarge,
               )
             ],
           ),
         ));
+  }
+}
+
+myurllauncher(String url) async {
+  var myuri = Uri.parse(url);
+  if (await canLaunchUrl(myuri)) {
+    await launchUrl(myuri);
+  } else {
+    logdev.log("Could Not Launch ${myuri.toString()}");
   }
 }

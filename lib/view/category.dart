@@ -2,11 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:it_news_blog_hamidjk/gen/assets.gen.dart';
-import 'package:it_news_blog_hamidjk/models/postermap.dart';
-
+import 'package:it_news_blog_hamidjk/model/postermap.dart';
+import 'package:it_news_blog_hamidjk/component/strings.dart';
 import '../component/my_colors.dart';
 import '../component/my_components.dart';
-import '../component/strings.dart';
 
 class Categorypage extends StatefulWidget {
   @override
@@ -41,7 +40,7 @@ class _CategorypageState extends State<Categorypage> {
               ),
               Text(
                 MyStrings.Successemail,
-                style: textThemeins.bodyText2,
+                style: textThemeins.bodyMedium,
               ),
               SizedBox(
                 height: 25,
@@ -51,14 +50,14 @@ class _CategorypageState extends State<Categorypage> {
                 decoration: InputDecoration(
                     alignLabelWithHint: true,
                     hintText: MyStrings.namefamily,
-                    hintStyle: textThemeins.headline4),
+                    hintStyle: textThemeins.headlineMedium),
               ),
               SizedBox(
                 height: 25,
               ),
               Text(
                 MyStrings.category,
-                style: textThemeins.bodyText2,
+                style: textThemeins.bodyMedium,
               ),
               SizedBox(height: 20),
               //HashTagsGridViewList
@@ -144,7 +143,7 @@ class _CategorypageState extends State<Categorypage> {
                                 ),
                                 Text(
                                   tagListreciver[index].title,
-                                  style: textThemeins.headline5,
+                                  style: textThemeins.headlineSmall,
                                 )
                               ],
                             ),

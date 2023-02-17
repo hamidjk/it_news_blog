@@ -1,6 +1,8 @@
 class MyStrings {
-  static const String viewHotBlog = " مشاهده داغ ترین نوشته ها ";
+  static const String flutterdev = "https://flutter.dev";
   static const String viewHotpad = " مشاهده داغ ترین پادکست ها ";
+  static const String itbloggithub = "https://github.com/hamidjk/it_news_blog";
+  static const String viewHot = "مشاهده داغ ترین نوشته ها ";
   static const String relatedArticale = " نوشته های مرتبط ";
   static const String submitArticle = " ارسال مقاله ";
   static const String submitPodcasts = " ارسال پادکست ";
@@ -15,6 +17,8 @@ class MyStrings {
 
 برای ارسال مطلب و پادکست باید حتما
  ثبت نام کنید """;
+  static const String shareText =
+      "                  این برنامه به دوستات پیشنهاد بده مرسی             ";
   static const String Successemail = """تبریک میگم ، ایمیل با موفقیت تایید شد
 لطفا اطلاعات ثبت نام رو کامل کن""";
   static const String namefamily = "نام و نام خانوادگی";

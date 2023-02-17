@@ -1,7 +1,9 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:it_news_blog_hamidjk/viewpages/main_screen.dart';
+import 'package:it_news_blog_hamidjk/view/main_screen.dart';
 import 'component/my_colors.dart';
 
 void main() {
@@ -104,6 +106,6 @@ class myApp extends StatelessWidget {
                     color: Colorss.postertitle,
                     fontWeight: FontWeight.bold))),
         debugShowCheckedModeBanner: false,
-        home: mainscreen());
+        home: Mainscreen());
   }
 }
